@@ -10,7 +10,7 @@ docker-compose rm
 echo ">> Remove volume dangling:"
 docker volume rm $(docker volume ls -qf dangling=true)
 echo ">> Running docker-compose.yml (make the name with the directory)"
-docker-compose up -d
+docker-compose -f docker-compose-local.yml up -d
 echo ">> Verify the list the docker-compose running"
 docker-compose ps
 echo "---------"
