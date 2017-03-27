@@ -1,12 +1,17 @@
 # Working ok the container in heroku 
 # Fowllow the steps:
-- heroku login
-- heroku container:login
-- heroku apps
+heroku login
+heroku container:login
+heroku apps
 # >>>gettin' the herokuappname- In this case is:radiant-journey-22301
-- heroku container:push --app radiant-journey-22301
-- NOTE: Works redonly the volume :(
-- node-js-getting-started
+heroku container:push --app radiant-journey-22301
+# NOTE: RUN LOCALLY:
+run.sh
+
+
+
+
+# node-js-getting-started
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
